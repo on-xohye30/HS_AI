@@ -1,0 +1,18 @@
+# 1) 프로젝트 폴더로 이동 (본인의 경로에 맞게 수정)
+cd "C:\Your\Project\Path"
+
+# 2) 가상환경 생성 및 활성화
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# 3) pip 도구 자체를 최신으로 업데이트
+python -m pip install --upgrade pip
+
+
+###########################################################
+#################### 여기까지 생략 가능 ####################
+##########################################################
+
+pip install crewai==1.9.3 litellm==1.74.9 openai==1.83.0
+
+ollama pull mistral
